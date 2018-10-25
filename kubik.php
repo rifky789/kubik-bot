@@ -36,7 +36,7 @@ for ($x=0; $x <1; $x++) {
 			'note' 	=> $rnd, 
 		);
 		$header[] = array(
-			'post' => 'OSVersion=5.1.1&android_channel=google&android_id=2f3dfaf5593ffab1&cmd=7011&deviceCode=0&device_brand=OPPO&device_ip=120.188.5.125&device_version=A33f&dtu=001&lat=0.0&lon=0.0&network=3g&pack_channel=google&show_type=un_login_award_view&time=1540428079166&tk=ACB6oENvEThC6ZyOGwItDrhnCy7m2_wqS1lxdHRodw&uuid=bcba4c8187204f65b60d0e71c6473e60&version=15005&versionName=1.5.5&sign=6d2354868853b1f5b23053dc113da8cf', 
+			'post' => 'OSVersion=5.1.1&android_channel=google&android_id=2f3dfaf5593ffab1&cmd=7011&deviceCode=0&device_brand=OPPO&device_ip=120.188.5.125&device_version=A33f&dtu=001&lat=0.0&lon=0.0&network=3g&pack_channel=google&show_type=un_login_award_view&time=1540428079166&tk=ACB6oENvEThC6ZyOGwItDrhnCy7m2_wqS1lxdHRodw&uuid=bcba4c8187204f65b60d0e71c6473e60&version=15005&versionName=1.5.5&sign=6d2354868853b1f5b23053dc113da8cf, 
 		);
 		$respons = $sdata->sdata($url , $header); 
 		unset($url);unset($header);
