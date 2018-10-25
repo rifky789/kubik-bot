@@ -8,17 +8,6 @@ require_once("sdata-modules.php");
  * @Last Modified time: 2018-08-17 15:13:34
 */
 
-
-##############################################################################################################
-$config['deviceCode'] 		= '3551230xxxxxxx';
-$config['tk'] 				= 'ACGmNhoexxxxxx';
-$config['token'] 			= '35a7oDTxxxxxxx';
-$config['uuid'] 			= 'abdacad4xxxxxx4';
-$config['sign'] 			= '12988158bxxxxxx';
-$config['android_id'] 		= 'a28a65fbbxxxxxx';
-##############################################################################################################
-
-
 for ($x=0; $x <1; $x++) { 
 	$url 	= array(); 
 	for ($cid=0; $cid <20; $cid++) { 
@@ -47,7 +36,7 @@ for ($x=0; $x <1; $x++) {
 			'note' 	=> $rnd, 
 		);
 		$header[] = array(
-			'post' => 'OSVersion=8.0.0&android_channel=google&android_id='.$config['android_id'].'&content_id='.$id.'&content_type=1&deviceCode='.$config['deviceCode'].'&device_brand=samsung&device_ip=114.124.239.'.rand(0,255).'&device_version=SM-A730F&dtu=001&lat=&lon=&network=wifi&pack_channel=google&time='.$timeIn30Minutes.'&tk='.$config['tk'].'&token='.$config['token'].'&uuid='.$config['uuid'].'&version=10047&versionName=1.4.7&sign='.$config['sign'], 
+			'post' => 'OSVersion=5.1.1&android_channel=google&android_id=2f3dfaf5593ffab1&cmd=7011&deviceCode=0&device_brand=OPPO&device_ip=120.188.5.125&device_version=A33f&dtu=001&lat=0.0&lon=0.0&network=3g&pack_channel=google&show_type=un_login_award_view&time=1540428079166&tk=ACB6oENvEThC6ZyOGwItDrhnCy7m2_wqS1lxdHRodw&uuid=bcba4c8187204f65b60d0e71c6473e60&version=15005&versionName=1.5.5&sign=6d2354868853b1f5b23053dc113da8cf', 
 		);
 		$respons = $sdata->sdata($url , $header); 
 		unset($url);unset($header);
